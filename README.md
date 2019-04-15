@@ -8,9 +8,8 @@ Just make
 docker-compose up
 ```
 
-## Enpoints 
+## Endpoints 
 
-`POST api/movies`✅
 
 Request body should contain only movie title:
 ```json
@@ -19,7 +18,6 @@ Request body should contain only movie title:
 Based on passed title, other movie details are fetched from OMDb.
 Response includes full movie object, along with all fetched data.
 
-`GET api/movies` ✅
 
 Fetch list of all movies already present in application database.
 
@@ -46,7 +44,6 @@ Fetch list of all movies already present in application database.
 Movies could be filtered by metascore. By passing query param `metascore=76` 
 you get a list of movies with metascore greater or equal to 76.
 
-`POST api/comments:` ✅
 
 Request body should contain ID of movie already present in database, and comment text body.
 
@@ -55,7 +52,6 @@ Request body should contain ID of movie already present in database, and comment
 ```
 In response one gets the comment with its unique id.
 
-`GET api/comments`✅
 ​
 Fetch list of all comments present in application database.
 
@@ -76,7 +72,6 @@ Fetch list of all comments present in application database.
 ]
 ```
 
-`GET api/comments/<movie_id>`✅
 
 Fetch list of all comments for a given movie id.
 
