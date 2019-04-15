@@ -73,6 +73,7 @@ Fetch list of all comments for a given movie id.
 `GET /top`
 
 Returns top movies already present in the database ranking based on a number of comments added to the movie.
+If there are no comments then there is no ranking.
 
 ```json
 [
