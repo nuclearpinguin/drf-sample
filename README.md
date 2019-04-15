@@ -58,7 +58,7 @@ In response one gets the comment with its unique id.
 
 
 `GET api/comments`
-​
+
 Fetch list of all comments present in application database.
 
 ```json
@@ -78,6 +78,7 @@ Fetch list of all comments present in application database.
 ]
 ```
 
+`GET api/comments/<movie_id>`
 
 Fetch list of all comments for a given movie id.
 
