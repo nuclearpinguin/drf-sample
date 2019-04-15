@@ -1,5 +1,15 @@
 # drf-sample
 
+## Setup
+
+Just make 
+
+```
+docker-compose up
+```
+
+## Enpoints 
+
 `POST api/movies`✅
 
 Request body should contain only movie title:
