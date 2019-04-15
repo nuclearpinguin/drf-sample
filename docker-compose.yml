@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  drfsample:
+    build: .
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: bash -c "python manage.py makemigrations movies && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    expose:
+      - 8000
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
