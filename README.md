@@ -10,7 +10,7 @@ docker-compose up
 
 ## Endpoints 
 
-`POST api/movies`
+`POST api/movies/`
 
 Request body should contain only movie title:
 ```json
@@ -47,7 +47,7 @@ Movies could be filtered by metascore. By passing query param `metascore=76`
 you get a list of movies with metascore greater or equal to 76.
 
 
-`POST api/comments:`
+`POST api/comments/`
 
 Request body should contain ID of movie already present in database, and comment text body.
 
